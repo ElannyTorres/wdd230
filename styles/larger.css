@@ -1,0 +1,12 @@
+/* @media only screen and (min-width: 36em) {
+  nav {
+    flex-direction: row-reverse;
+    justify-content: right;
+    gap: 3rem;
+  }
+  
+  header > img {
+    height: inherit;
+    box-shadow: 5px 10px 10px grey;
+  }
+} */
