@@ -1,0 +1,39 @@
+@media only screen and (min-width: 36em) {
+  nav {
+    flex-direction: row-reverse;
+    justify-content: right;
+    gap: 3rem;
+  }
+  
+  header > img {
+    height: inherit;
+    box-shadow: 5px 10px 10px grey;
+  }
+ 
+  /* main{
+    display: flex;
+    justify-content: center;
+  } */
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .title {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  #card1 {
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+  }
+
+  #page-info {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
