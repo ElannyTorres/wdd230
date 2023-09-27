@@ -15,6 +15,9 @@ body {
   line-height: 1.5;
   font-family: Roboto, sans-serif;
   color: #333;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 ul {
@@ -40,13 +43,13 @@ nav > ul {
   width: 100%;
 }
 
-/* .material-symbols-outlined {
+.material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
   'opsz' 48
-} */
+}
 
 .nav-link {
   text-decoration: none;
