@@ -17,13 +17,13 @@
     list-style: none;
   }
   .cristal-effect {
-    /* background: rgba(147, 116, 138, 0.6);
+    background: rgba(147, 116, 138, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     opacity: 0.8;
     text-align: center;
-    line-height: 200px; */
+    line-height: 200px;
     /* font-size: 24px; */
   }
   header, footer {
@@ -46,16 +46,16 @@
   nav {
     background-color: var(--mountbatten-pink);
   }
-  .navigation {
+  .navigation-large {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 4rem;
   }
-  .navigation li {
+  .navigation-large li {
     font-size: 1.5rem;
   }
-  .navigation a {
+  .navigation-large a {
     color: var(--erie-black);
     text-decoration: none;
   }
@@ -138,12 +138,6 @@
     display: none;
   }
   .navigation {
-    flex-direction: row;
-    display: flex;
-  }
-  .navigation li {
-    display: flex;
-    flex-direction: row;
-    margin-top: 3rem;
+    display: none;
   }
 }
