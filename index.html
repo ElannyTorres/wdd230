@@ -17,8 +17,8 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/larger.css">
     <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
     <!-- Favicon -->
     <link rel="icon" href="./images/favicon.ico">
     <!-- Social Media Meta - Open Graph -->
@@ -33,10 +33,12 @@
     <header>
         <img id='profile' src="./images/Vale-Me.jpg" alt="profile-photo">
         <h1 id="name">Luz Torres</h1>
+        <div id="darkMode">
+            <button id="mode">DarkMode</button>
+        </div>
     </header>
-    
+    <a id="menu" href="#"></a>
     <nav>
-        <!-- <div class="menu-icon">&#9776;</div> -->
         <ul class="navigation cristal-effect">
             <li><a href="" target="_blank" class="nav-link">Home</a></li>
             <li><a href="" target="_blank" class="nav-link">Chamber</a></li>
@@ -65,7 +67,7 @@
             </div>
         </section>
 
-        <section class="card info">
+        <section class="card info" id="card2">
             <h3 class="card-title">Information</h3>
             <div class="card-content">
                 <ul>
@@ -92,6 +94,7 @@
     </footer>
 
     <script src="./scripts/getDates.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>
