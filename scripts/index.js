@@ -1,3 +1,4 @@
+/* Hamburger Menu */
 const mainNav = document.querySelector('.navigation');
 const hamBtn = document.querySelector('#menu');
 
@@ -6,7 +7,9 @@ hamBtn.addEventListener('click', () => {
     hamBtn.classList.toggle('show');
 })
 
+/* Dark Mode */
 const modeBtn = document.querySelector('#mode');
+
 const body = document.querySelector('body');
 const header = document.querySelector('header');
 const nameTitle = document.querySelector('#name');

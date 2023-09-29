@@ -1,0 +1,43 @@
+@media only screen and (max-width: 768px) {
+    :root {
+        --green: #000807;
+        --blue: #325F86;
+        --red: #885053;
+        --clear: #F1E3E4;
+        --Quicksand: 'Quicksand', sans-serif;
+        --PT-Sans: 'PT Sans', sans-serif;
+    }
+    #menu {
+        display: block;
+        background-color: var(--blue);
+        color: var(--clear);
+        text-align: center;
+        padding: 0.6rem;
+    }
+    #menu::before {
+        content: "≡";
+    }
+
+    #menu.show::before {
+        content: "x";
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    nav ul li:hover {
+        background-color: var(--clear);
+    }
+    nav ul li a:hover{
+        color: var(--blue);
+    }
+    .navigation {
+        display: none;
+    }
+    nav.show {
+        display: flex;
+        justify-content: center;
+        padding-top: -1rem;
+    }
+}

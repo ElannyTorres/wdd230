@@ -1,0 +1,154 @@
+:root {
+	--green: #000807;
+	--blue: #325F86;
+	--red: #885053;
+	--clear: #F1E3E4;
+	--Quicksand: 'Quicksand', sans-serif;
+	--PT-Sans: 'PT Sans', sans-serif;
+}
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+li {
+	list-style: none;
+}
+header ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 1rem 4rem;
+}
+#logo {
+	width: 5rem;
+	border-radius: 50%;
+}
+#modeBtn {
+	position: absolute;
+	right: 1rem;
+	top: 1.1rem;
+}
+nav {
+	background-color: var(--blue);
+	font-weight: bolder;
+	/* filter: blur(1px); */
+	padding: 1rem;
+}
+nav ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+nav a,
+.weatherCard a {
+	color: var(--clear);
+	text-decoration: none;
+}
+#menu {
+	display: none;
+}
+#home {
+	display: grid;
+	grid-template-rows: auto 4rem 2rem;
+	grid-template-columns: auto 20rem auto;
+	justify-content: center;
+	align-items: center;
+}
+video {
+	width: 90vw;
+	grid-row: 1/4;
+	grid-column: 1/4;
+}
+#home button {
+	grid-row: 2/3;
+	grid-column: 2/3;
+	padding: 0.7rem;
+	border-radius: 10px;
+	background-color: var(--clear);
+}
+
+section {
+	padding: 1rem;
+}
+
+section h2 {
+	text-align: center;
+}
+
+#eventsSection {
+	margin-top: 1rem;
+	padding-bottom: 2rem;
+	background-color: var(--blue);
+	color: var(--clear);
+}
+#cardContainer {
+	margin-top: 1rem;
+	display: flex;
+	gap: 1.5rem;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.circuitCard {
+	min-width: 20rem;
+	min-height: 20rem;
+	/* border: 2px solid red; */
+	border-radius: 10px;
+	text-align: center;
+	line-height: 1.8rem;
+	background-color: var(--clear);
+	color: var(--blue);
+}
+.circuitCard img {
+	width: 20rem;
+	border-radius: 10px 10px 0 0;
+}
+#weatherSection div,
+#ticketsInfo div {
+	margin: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+}
+.weatherCard {
+	max-width: 25rem;
+	justify-content: center;
+	border-radius: 10px;
+}
+div.weatherCard {
+	height: 15rem;
+	width: 10rem;
+	display: flex;
+	flex-direction: column;
+}
+#ticketsInfo {
+	background-color: var(--blue);
+	color: var(--clear);
+}
+.ticketCard p {
+	text-align: center;
+}
+.ticketCard ul {
+	text-align: center;
+	/* width: 15rem; */
+}
+.spotlightCard {
+	margin: 1rem;
+	display: flex;
+	justify-content: center;
+}
+.spotlightCard img {
+	height: 20rem;
+}
+footer {
+	background-color: var(--blue);
+	color: var(--clear);
+	padding: 1rem;
+	bottom: 0;
+}
+footer ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
