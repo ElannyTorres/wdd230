@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+
+    <link rel="stylesheet" href="./styles/responsive-images.css">
+</head>
+<body>
+    <header>
+        <h1>Luz Torres - Responsive Images</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="./images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="./images/hero-medium.webp">
+                <img src="./images/hero-large.webp" alt="Arequipa, Peru Temple" width="500" height="250">
+                <span>Arequipa, Peru Temple</span>
+            </picture>
+        </div>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
