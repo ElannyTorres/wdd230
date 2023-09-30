@@ -58,5 +58,5 @@ function getChapterList() {
 function deleteChapter() {
     chapter = chapter.slice(0, chapter.length - 1);
     chapterArray = chapterArray.filter(item => item !== chapter);
-  setChapterList();
+    setChapterList();
 }
