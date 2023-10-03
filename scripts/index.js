@@ -15,14 +15,16 @@ const header = document.querySelector('header');
 const nameTitle = document.querySelector('#name');
 const main = document.querySelector('main');
 const navigation = document.querySelector('.navigation-large');
+const links = document.querySelectorAll('a');
+console.log(links);
 
 modeBtn.addEventListener('click', () => {
     if (modeBtn.textContent.includes("DarkMode")) {
-		body.style.background = "#0c1915";
+		body.style.background = "#2A3B47";
 		body.style.color = "whitesmoke";
 		nameTitle.style.color = "whitesmoke";
 		navigation.style.color = "whitesmoke";
-		main.style.background = "#0c1915";
+		main.style.background = "#2A3B47";
 		main.style.color = "whitesmoke";
 		modeBtn.textContent = "LightMode";
 	} else {

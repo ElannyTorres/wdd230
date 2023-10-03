@@ -83,13 +83,26 @@ nav {
   justify-content: center;
   color: whitesmoke;
 }
+#picture-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+#picture-container div {
+  position: absolute;
+  margin: 1rem;
+  padding: 0.7rem;
+  background-color: var(--mountbatten-pink);
+  border: 2px solid var(--wine);
+  border-radius: 20px;
+}
 
 main {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: 3rem 1fr;
   gap: 1rem;
-  margin: 1rem 2rem;
+  /* margin: 1rem 2rem; */
   align-items: center;
   justify-items: center;
 }
@@ -158,6 +171,12 @@ footer>ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+#maps-section {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
 }
 
 #flag {
