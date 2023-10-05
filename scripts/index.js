@@ -35,3 +35,26 @@ modeBtn.addEventListener('click', () => {
 		modeBtn.textContent = "DarkMode";
 	}
 })
+
+/* FORM */
+
+//* MATCH PASSWORD 
+const pass1 = document.querySelector('#password');
+const pass2 = document.querySelector('#password2');
+const errorMessage = document.querySelector('#error-message');
+pass2.addEventListener('focusout', () => {
+	if (pass1.value === pass2.value) {
+		console.log('They are the same')
+	} else {
+		errorMessage.textContent = 'The passwords DON\'T MATCH'
+	}
+
+})
+
+//* RANGE DISPLAY
+const rate = document.querySelector('#rate');
+const rangevalue = document.querySelector('#rangevalue');
+
+rate.addEventListener('change', () => {
+	rangevalue.textContent = rate.value;
+})

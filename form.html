@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luz Torres - WDD 230 - Web Frontend Development</title>
+    <meta name="description"
+        content="Explore WDD 230 - Web Frontend Development with Luz Torres on our course assignment portal. Enhance your web development skills and stay updated with the latest in frontend development.">
+    <meta name="author" content="Elanny Torres">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/form.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Google Icon  - https://fonts.google.com/icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/favicon.ico">
+
+    <!-- Social Media Meta - Open Graph -->
+    <meta property="og:title" content="Luz Torres' Home Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image"
+        content="https://traveler.marriott.com/es/wp-content/uploads/sites/2/2021/10/GI-542411244-Cusco-Night-1920x1080.jpg" />
+    <meta property="og:url" content="https://elannytorres.github.io/wdd230/" />
+
+</head>
+
+<body>
+
+    <header>
+        <img id='profile' src="./images/vale_me.jpg" alt="profile-photo">
+        <h1 id="name">Luz Torres</h1>
+        <div id="darkMode">
+            <button id="mode">DarkMode</button>
+        </div>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul class="navigation cristal-effect">
+            <li><a href="" target="_blank" class="nav-link">Home</a></li>
+            <li><a href="" target="_blank" class="nav-link">Chamber</a></li>
+            <li><a href="" target="_blank" class="nav-link">Site Plan</a></li>
+            <li><a href="" target="_blank" class="nav-link">Form</a></li>
+        </ul>
+        <ul class="navigation-large cristal-effect">
+            <li><a href="" target="_blank" class="nav-link">Home</a></li>
+            <li><a href="" target="_blank" class="nav-link">Chamber</a></li>
+            <li><a href="" target="_blank" class="nav-link">Site Plan</a></li>
+            <li><a href="" target="_blank" class="nav-link">Form</a></li>
+        </ul>
+    </nav>
+
+    <section id="form-container">
+
+        <form action="./record.html" method="get">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Please enter your username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" placeholder="Please enter you password" required>
+
+            <span id="error-message"></span>
+
+            <label for="password2">Re-enter Your Password:</label>
+            <input type="password" id="password2" name="password2" pattern="[a-zA-Z0-9]{8,}" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Please use your school email address" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required>
+
+            <label for="rate">Rate the website:</label>
+            <div id="rangevalue">0</div>
+            <input type="range" name="rate" id="rate" min="1" max="10" value="5" step="1" >
+            
+            <button id="submitbtn" type="submit">SUBMIT</button>
+        </form>
+
+    </section>
+
+    <footer>
+        <ul>
+            <li class="page-info">
+                <span id="copy-year">&copy; 2023</span>
+                <span>Luz Torres</span>
+                <span>
+                    <img id="flag" src="./images/peru-flag.png" alt="peru-flag">
+                </span>
+            </li>
+            <li id="lastModified"></li>
+        </ul>
+    </footer>
+
+    <script src="./scripts/getDates.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>

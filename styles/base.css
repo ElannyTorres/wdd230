@@ -42,7 +42,7 @@ img#profile {
   color: var(--erie-black);
 }
 
-button {
+#mode {
   padding: 0.5rem;
   position: absolute;
   right: 1rem;

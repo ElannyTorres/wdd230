@@ -1,0 +1,30 @@
+:root {
+    --error-color: red;
+    --margin-simple: 1rem;
+    --btn-color: whitesmoke;
+    --btn-bg-color: #753742;
+}
+#form-container {
+    margin: var(--margin-simple);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-simple);
+    align-content: center;
+}
+form button {
+    align-items: center;
+    width: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-color);
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid;
+}
+#error-message {
+    color: var(--error-color);
+    font-size: smaller;
+}
