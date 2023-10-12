@@ -16,7 +16,6 @@ const nameTitle = document.querySelector('#name');
 const main = document.querySelector('main');
 const navigation = document.querySelector('.navigation-large');
 const links = document.querySelectorAll('a');
-console.log(links);
 
 modeBtn.addEventListener('click', () => {
     if (modeBtn.textContent.includes("DarkMode")) {
@@ -42,19 +41,34 @@ modeBtn.addEventListener('click', () => {
 const pass1 = document.querySelector('#password');
 const pass2 = document.querySelector('#password2');
 const errorMessage = document.querySelector('#error-message');
-pass2.addEventListener('focusout', () => {
-	if (pass1.value === pass2.value) {
-		console.log('They are the same')
-	} else {
-		errorMessage.textContent = 'The passwords DON\'T MATCH'
-	}
-
-})
-
+if(pass2) {
+	pass2.addEventListener('focusout', () => {
+		if (pass1.value === pass2.value) {
+			console.log('They are the same')
+		} else {
+			errorMessage.textContent = 'The passwords DON\'T MATCH'
+		}
+		
+	})
+}
+	
 //* RANGE DISPLAY
 const rate = document.querySelector('#rate');
 const rangevalue = document.querySelector('#rangevalue');
 
-rate.addEventListener('change', () => {
-	rangevalue.textContent = rate.value;
-})
+if (rate) {
+	rate.addEventListener('change', () => {
+		rangevalue.textContent = rate.value;
+	})
+}
+
+/* localStorage */
+if (localStorage.getItem("visitCount") === null) {
+  localStorage.setItem("visitCount", 1);
+}
+
+const visitCount = parseInt(localStorage.getItem("visitCount"));
+
+localStorage.setItem("visitCount", visitCount + 1);
+
+document.getElementById("visitCount").textContent = visitCount;
