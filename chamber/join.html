@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaPi Chamber of Commerce Site Plan</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/large.css">
+
+    <!-- Social Media Meta - Open Graph -->
+    <meta property="og:title" content="Machupicchu Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image"
+        content="https://traveler.marriott.com/es/wp-content/uploads/sites/2/2021/10/GI-542411244-Cusco-Night-1920x1080.jpg" />
+    <meta property="og:url" content="https://elannytorres.github.io/wdd230/" />
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><img id="logo" src="./images/logo.png" alt="Logo"></li>
+            <li>
+                <h1>MACHUPICCHU CHAMBER OF COMMERCE</h1>
+            </li>
+        </ul>
+        <div>
+            <button id="modeBtn">Darkmode</button>
+        </div>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav class="navigation">
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="#eventsSection">EVENTS</a></li>
+            <li><a href="#weatherSection">WEATHER AND VISITING HOURS</a></li>
+            <li><a href="#ticketsInfo">TICKETS INFORMATION</a></li>
+            <li><a href="#spotlights">SOME SPOTLIGHTS</a></li>
+        </ul>
+    </nav>
+    
+    <div id="application-container">
+      <h1>MACHUPICCHU Chamber Of Commerce Application</h1>
+      <section id="form-container">
+        <form method="get" action="./thanks.html">
+          <fieldset>
+            <legend>Applicant Information</legend>
+            <label class="top">First Name* <input type="text" name="fname" id="" required></label>
+            <label class="top">Last Name* <input type="text" name="lname" id="" required></label>
+            <label class="top">Title or Position <input type="text" name="position" id="" placeholder="CTO" pattern="^[A-Za-z -]{7,}$"></label>
+            <label class="top">Email* <input type="email" name="email" id="" placeholder="someone@gmail.com" required></label>
+            <label class="top">Phone* <input type="tel" name="phone" id="" placeholder="1234551234" required></label>
+          </fieldset>
+          <fieldset>
+            <legend>Business Information</legend>
+            <label class="top">Business/Organization's name*<input type="text" name="orgname" id="orgname" required></label>
+              <div>Membership Level</div>
+              <label class="sbs"><input type="radio" name="audience" id="" value="np"> NP Membership <span>(non profit organizations / no fee)</span></label>
+              <label class="sbs"><input type="radio" name="audience" id="" value="bronze"> Bronze Membership</label>
+              <label class="sbs"><input type="radio" name="audience" id="" value="silver"> Silver Membership</label>
+              <label class="sbs"><input type="radio" name="audience" id="" value="gold"> Gold Membership</label>
+              <div>Business description</div>
+              <textarea name="" id=""></textarea>
+              <input type="hidden" name="timestamp" id="timestamp">
+            </fieldset>
+    
+            <input class="submitBtn" type="submit" value="Join MACHUPICCHU Chamber Of Commerce">
+        </form>
+    
+      </section>
+  
+      <section class="membership-benefits">
+        <h2>Membership Benefits</h2>
+        
+        <ul>
+          <div>
+            <li>
+              <strong>NP Membership</strong>
+              <ul>
+                <li>Access to special events</li>
+                <li>Training opportunities</li>
+              </ul>
+            </li>
+          </div>
+          <div>
+            <li>
+              <strong>Bronze Membership</strong>
+              <ul>
+                <li>NP benefits</li>
+                <li>Advertising on home page</li>
+                <li>Event discounts</li>
+              </ul>
+            </li>
+          </div>
+          <div>
+            <li>
+              <strong>Silver Membership</strong>
+              <ul>
+                <li>Bronze and NP benefits</li>
+                <li>Additional training</li>
+                <li>Premium support</li>
+              </ul>
+            </li>
+          </div>
+          <div>
+            <strong>Gold Membership</strong>
+            <li>
+              <ul>
+                <li>Silver and Bronze benefits</li>
+                <li>Additional training</li>
+                <li>Premium support</li>
+              </ul>
+            </li>
+          </div>
+        </ul>
+      </section>
+    </div>
+
+    <footer>
+        <ul>
+            <li>&copy; 2023 WDD230's Project</li>
+            <li>Luz Torres</li>
+            <!-- <li>Github</li>
+            <li>Mail</li>
+            <li>LinkedIn</li> -->
+            <li id="lastModified"></li>
+        </ul>
+    </footer>
+
+    <script src="./scripts/getDates.js"></script>
+</body>
+
+</html>

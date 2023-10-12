@@ -40,4 +40,16 @@ if (!lastVisit) {
   localStorage.setItem('lastVisit', currentDate.toISOString());
 }
 
-visitMessage.innerText = message;
+if (visitMessage) visitMessage.innerText = message;
+
+//* TIMESTAMP IN FORM
+function setTimestamp() {
+  const timestampField = document.getElementById("timestamp");
+  const currentTimestamp = new Date().toISOString();
+
+  timestampField.value = currentTimestamp;
+  console.log(timestampField.value)
+}
+
+//! Call the setTimestamp function when the form is loaded
+document.addEventListener("DOMContentLoaded", setTimestamp);

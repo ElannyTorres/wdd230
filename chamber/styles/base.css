@@ -65,6 +65,7 @@ video {
 	padding: 0.7rem;
 	border-radius: 10px;
 	background-color: var(--clear);
+	z-index: 4;
 }
 
 section {
@@ -198,4 +199,119 @@ main div {
 	/* Scale up the image by 5% */
 	transition: transform 0.3s ease;
 	/* Smooth transition effect */
+}
+
+/* FORM */
+#application-container {
+	margin: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+#application-container h1 {
+	grid-column: 1/3;
+}
+#form-container {
+	grid-column: 1/2;
+	margin: 1rem;
+	padding: 0 2%;
+	min-height: 30rem;
+}
+form fieldset:first-child {
+	margin: 2rem 0;
+	border: 1px solid var(--blue);
+	border-radius: 10px;
+	padding: .5rem 2%;
+	/* background-image: url('../images/at_night.jpg'); */
+	/* background-color: var(--blue); */
+}
+
+form legend {
+	margin: 0 1rem;
+	padding: 0.3rem .5rem;
+	background-color:var(--blue);
+	color: var(--clear);
+	border-radius: 10px;
+	/* filter: blur(-5px); */
+	z-index: 5;
+}
+
+form label.top,
+form div {
+	backdrop-filter: blur(2px);
+	display: block;
+	padding-top: 1rem;
+	color: var(--blue);
+	font-size: .9rem;
+}
+
+form label.top input,
+form label.top select,
+textarea {
+	-webkit-appearance: none;
+	display: block;
+	font-size: 1rem;
+	border: solid 1px var(--blue);
+	border-radius: 4px;
+	padding: .75rem;
+	color: #000000;
+	width: 100%;
+	max-width: 20rem;
+	background-color: rgba(86, 147, 218, 0.1);
+}
+
+form label.sbs {
+	display: block;
+	padding: .75rem 0;
+	color: #000000;
+}
+
+form input.submitBtn {
+	border: none;
+	background-color: var(--blue);
+	color: var(--clear);
+	border-radius: 1rem;
+	padding: .75rem 1.5rem;
+	margin: 1rem 0 2rem 2%;
+	width: 96%;
+	max-width: 20rem;
+	box-shadow: 10px 13px 19px 3px rgba(0, 0, 0, 0.47);
+}
+
+/* form label.top input:required {
+	border-left: 6px solid var(--red);
+} */
+
+form label.top input:required:valid {
+	background-color: rgba(16, 209, 90, 0.5);
+}
+form label.top input:required:invalid {
+	background-color: rgba(255, 0, 0, 0.164);
+}
+form label input:focus,
+textarea:focus {
+	box-shadow: 10px 13px 19px 3px rgba(0, 0, 0, 0.47);
+}
+
+.sbs span {
+	font-size: smaller;
+}
+
+.membership-benefits {
+	grid-column: 2/3;
+	margin-top: 4rem;
+}
+.membership-benefits div {
+	line-height: 2rem;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin: 2rem auto;
+	max-width: 25rem;
+}
+.membership-benefits div {
+	background: var(--blue)/* rgba(59, 144, 184, 0.5) */;
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 5.5px );
+	-webkit-backdrop-filter: blur( 5.5px );
+	border-radius: 10px;
+	color: var(--clear);
 }
