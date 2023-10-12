@@ -1,0 +1,106 @@
+{
+    "weeks": [
+        {
+            "week": "Week 01",
+            "links": [
+                {
+                    "url": "./week01/chamber-site-plan.html",
+                    "title": "Chamber page site plan"
+                }
+            ]
+        },
+        {
+            "week": "Week 02",
+            "links": [
+                {
+                    "url": "./week02/design.html",
+                    "title": "Design Principles"
+                },
+                {
+                    "url": "https://codepen.io/luztorres/pen/QWzrzJd",
+                    "title": "Responsive Hamburger Menu"
+                },
+                {
+                    "url": "./week02/bom.html",
+                    "title": "DOM Manipulation"
+                },
+                {
+                    "url": "./chamber/index.html",
+                    "title": "MAPI Chamber of Commerce"
+                }
+            ]
+        },
+        {
+            "week": "Week 03",
+            "links": [
+                {
+                    "url": "./week03/images/landscape.webp",
+                    "title": "WebP"
+                },
+                {
+                    "url": "./week03/lazyload.html",
+                    "title": "LazyLoad"
+                },
+                {
+                    "url": "./week03/responsive-images.html",
+                    "title": "Responsive images"
+                },
+                {
+                    "url": "./week03/bom.html",
+                    "title": "LocalStorage"
+                }
+            ]
+        },
+        {
+            "week": "Week 04",
+            "links": [
+                {
+                    "url": "https://codepen.io/luztorres/pen/zYympjr?editors=1100",
+                    "title": "CSS Pseudo-Classes"
+                },
+                {
+                    "url": "./week04/images/combinator-exercises.png",
+                    "title": "Combinator Exercises"
+                },
+                {
+                    "url": "./week04/tablebuild.html",
+                    "title": "Table"
+                },
+                {
+                    "url": "./week04/form-start/index.html",
+                    "title": "HTMLS Form"
+                },
+                {
+                    "url": "./form.html",
+                    "title": "Team ActivityForm"
+                }
+            ]
+        },
+        {
+            "week": "Week 05",
+            "links": [
+                {
+                    "url": "https://codepen.io/luztorres/pen/ExGMpay",
+                    "title": "Pseudo-Elements"
+                },
+                {
+                    "url": "/week05/prophets.html",
+                    "title": "Fetch API"
+                },
+                {
+                    "url": "week05/weather.html",
+                    "title": "Weather API"
+                }
+            ]
+        },
+        {
+            "week": "Week 06",
+            "links": [
+                {
+                    "url": "",
+                    "title": ""
+                }
+            ]
+        }
+    ]
+}
