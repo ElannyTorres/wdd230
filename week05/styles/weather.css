@@ -1,0 +1,40 @@
+:root {
+    --erie-black: #0c1915;
+    --air-force-blue: #517a8b;
+    --sage: #b5ae8f;
+    --jasmine: #fcd68b;
+    --jasmine-clear: #ffe683;
+    --wine: #753742;
+    --mountbatten-pink: #93748A;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    height: 11vh;
+    padding-top: 2rem;
+    background-color: var(--erie-black);
+    backdrop-filter: blur(5px);
+    color: var(--sage);
+}
+
+main {
+    height: 80.7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    height: 5vh;
+    background-color: var(--erie-black);
+    backdrop-filter: blur(5px);
+    color: var(--sage);
+}
