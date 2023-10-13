@@ -62,6 +62,15 @@
             "icon": "best_logo.png",
             "membership-level": "Gold",
             "email": "info@bestco.com"
+        },
+        {
+            "name": "Community Help Foundation",
+            "address": "555 Charity Lane, Philanthropy City, State, 12345",
+            "phone-numbers": ["111-222-3333", "444-555-6666"],
+            "URLs":  "www.communityhelpfoundation.org",
+            "icon": "chf_logo.png",
+            "membership-level": "NP",
+            "email": "info@communityhelpfoundation.org"
         }
     ]
 }
