@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "ABC Corporation",
+            "address": "123 Main Street, Cityville, State, 12345",
+            "phone-numbers": ["123-456-7890", "987-654-3210"],
+            "URLs":  "www.abccorp.com",
+            "icon": "abc_logo.png",
+            "membership-level": "Gold",
+            "email": "info@abccorp.com"
+        },
+        {
+            "name": "XYZ Inc.",
+            "address": "456 Park Avenue, Townsville, State, 54321",
+            "phone-numbers": ["555-123-4567"],
+            "URLs":  "www.xyzinc.com",
+            "icon": "xyz_logo.png",
+            "membership-level": "Silver",
+            "email": "contact@xyzinc.com"
+        },
+        {
+            "name": "123 Industries",
+            "address": "789 Broadway, Villagetown, State, 67890",
+            "phone-numbers": ["222-333-4444"],
+            "URLs":  "www.123industries.com",
+            "icon": "123_logo.png",
+            "membership-level": "Bronze",
+            "email": "hello@123industries.com"
+        },
+        {
+            "name": "Sample Company",
+            "address": "101 Avenue Street, Citytown, State, 23456",
+            "phone-numbers": ["777-888-9999", "111-222-3333"],
+            "URLs":  "www.sampleco.com",
+            "icon": "sample_logo.png",
+            "membership-level": "Gold",
+            "email": "contact@sampleco.com"
+        },
+        {
+            "name": "Global Enterprises Ltd.",
+            "address": "555 Center Road, Metropolis, State, 34567",
+            "phone-numbers": ["444-555-6666"],
+            "URLs":  "www.globalent.com",
+            "icon": "global_logo.png",
+            "membership-level": "Silver",
+            "email": "info@globalent.com"
+        },
+        {
+            "name": "Innovative Solutions Inc.",
+            "address": "777 Innovation Parkway, Innovation City, State, 45678",
+            "phone-numbers": ["666-777-8888", "999-000-1111"],
+            "URLs":  "www.innovativesol.com",
+            "icon": "innovative_logo.png",
+            "membership-level": "Bronze",
+            "email": "support@innovativesol.com"
+        },
+        {
+            "name": "Best Co.",
+            "address": "444 Best Avenue, Besttown, State, 56789",
+            "phone-numbers": ["333-444-5555"],
+            "URLs":  "www.bestco.com",
+            "icon": "best_logo.png",
+            "membership-level": "Gold",
+            "email": "info@bestco.com"
+        }
+    ]
+}
