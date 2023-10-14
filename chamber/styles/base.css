@@ -3,6 +3,10 @@
 	--blue: #325F86;
 	--red: #885053;
 	--clear: #F1E3E4;
+	--np: #325F86;
+	--bronze: #CD7F32;
+	--silver: #C0C0C0;
+	--gold: #bf9b30;
 	--Quicksand: 'Quicksand', sans-serif;
 	--PT-Sans: 'PT Sans', sans-serif;
 }
@@ -314,4 +318,81 @@ textarea:focus {
 	-webkit-backdrop-filter: blur( 5.5px );
 	border-radius: 10px;
 	color: var(--clear);
+}
+
+/* DIRECTORY */
+.btnContainer {
+	margin: 1rem;
+}
+.myButton {
+	box-shadow: inset 0px 1px 0px 0px #ffffff;
+	background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+	background-color: #f9f9f9;
+	border-radius: 6px;
+	border: 1px solid #dcdcdc;
+	display: inline-block;
+	cursor: pointer;
+	color: #666666;
+	font-family: Arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+.myButton:hover {
+	background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+	background-color: #e9e9e9;
+}
+
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+#members-container.list-view {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+#members-container.grid-view {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+}
+.memberCard {
+	border: 1px solid red;
+	padding: 1rem;
+	/* background: rgba(255, 255, 255, 0.13); */
+	border-radius: 16px;
+	/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+	box-shadow: 11px 10px 22px -4px rgba(0, 0, 0, 0.75);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	line-height: 1.5rem;
+	width: 20rem;
+	text-align: center;
+}
+
+div.np {
+	background-color: var(--np);
+	color: var(--clear)
+}
+
+div.bronze {
+	background-color: var(--bronze);
+		color: var(--clear)
+}
+
+div.silver {
+	background-color: var(--silver);
+}
+
+div.gold {
+	background-color: var(--gold);
+	color: var(--clear)
 }
