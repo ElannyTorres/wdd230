@@ -116,16 +116,25 @@ section h2 {
 	align-items: center;
 	justify-content: center;
 }
-.weatherCard {
+#weatherSection > div > img {
 	max-width: 25rem;
 	justify-content: center;
 	border-radius: 10px;
 }
+.weatherlistContainer {
+	max-width: 30rem;
+}
 div.weatherCard {
 	height: 15rem;
 	width: 10rem;
+}
+#weatherList {
 	display: flex;
-	flex-direction: column;
+	gap: 0.7rem;
+	margin-left: -1rem;
+}
+#weatherList > li {
+	min-width: 4rem;
 }
 #ticketsInfo {
 	background-color: var(--blue);
