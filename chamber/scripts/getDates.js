@@ -80,7 +80,6 @@ const getWeather = async () => {
 const displayWeather = (list) => {
   const weatherList = document.querySelector('#weatherList');
   if (weatherList) {
-    console.log(list)
     list.forEach(weather => {
       let li = document.createElement('li');
       let date = document.createElement('strong');
@@ -99,4 +98,66 @@ const displayWeather = (list) => {
   }
 }
 
-getWeather()
+getWeather();
+
+
+//! Spotlights
+const baseURL = "https://elannytorres.github.io/wdd230/chamber";
+const membersURL = `${baseURL}/data/members.json`;
+
+const getMembers = async () => {
+    const response = await fetch(membersURL);
+    const data = await response.json();
+    filterMembers(data.members);
+}
+
+const filterMembers = (data) => {
+  let membership = ['Silver', 'Gold'];
+  let dataFiltered = data.filter(member => membership.includes(member['membership-level']));
+  displaySpotlight(dataFiltered);
+}
+
+const displaySpotlight = (list) => {
+  const [number1, number2] = getRandomNum();
+  let listToDisplay = [list[number1], list[number2]]
+  const memberContainer = document.querySelector('#cardContainer-spotlights');
+    listToDisplay.forEach((member, index) => {
+        const div = document.createElement('div');
+        div.setAttribute('class', `memberCard ${member['membership-level'].toLowerCase()}`);
+        const icon = document.createElement('img');
+        const name = document.createElement('h4');
+        const address = document.createElement('h5');
+        const phoneNumbers = document.createElement('h5');
+        const url = document.createElement('h5');
+        const membership = document.createElement('h5');
+        const email = document.createElement('h5');
+
+
+        icon.innerHTML = member.icon;
+        name.innerHTML = member.name;
+        address.innerHTML = member.address;
+        phoneNumbers.innerHTML = member.phoneNumbers;
+        url.innerHTML = member.URLs;
+        membership.innerHTML = member['membership-level'];
+        email.innerHTML = member.email;
+        div.appendChild(icon);
+        div.appendChild(name);
+        div.appendChild(address);
+        div.appendChild(phoneNumbers);
+        div.appendChild(url);
+        div.appendChild(membership);
+        div.appendChild(email);
+        memberContainer.appendChild(div);
+    });
+}
+
+function getRandomNum() {
+  const randomNumber1 = Math.floor(Math.random() * 5);
+  let randomNumber2 = Math.floor(Math.random() * 5);
+  while (randomNumber1 === randomNumber2) {
+    randomNumber2 = Math.floor(Math.random() * 5);
+  }
+  return [randomNumber1, randomNumber2];
+}
+
+getMembers()

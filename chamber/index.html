@@ -27,14 +27,17 @@
 
 </head>
 <body>
+    <section id="bannerContainer">
+        <h3>Join us at the Chamber of Commerce! Attend the welcome event on Wednesday at 7:00 p.m.</h3>
+        <div>
+            <button id="closeBtn">❌</button>
+        </div>
+    </section>
     <header>
         <ul>
             <li><img id="logo" src="./images/logo.png" alt="Logo"></li>
             <li><h1>MACHUPICCHU CHAMBER OF COMMERCE</h1></li>
         </ul>
-        <div>
-            <button id="modeBtn">Darkmode</button>
-        </div>
     </header>
     <a id="menu" href="#"></a>
     <nav class="navigation">
@@ -115,25 +118,20 @@
                     Machupicchu & Mountain <b> / </b>
                     Machu Picchu & Huchuy Picchu <b> / </b>
                     Machu Picchu & Inca Bridge
-                </p><!-- 
-                <ul>
-                    <li>Machupicchu</li>
-                    <li>Machupicchu + Huayna Picchu</li>
-                    <li>Machupicchu + Mountain</li>
-                    <li>Machu Picchu + Huchuy Picchu</li>
-                    <li>Machu Picchu + Inca Bridge</li>
-                </ul> -->
-                <!-- <h4>Availability</h4>
-                <p>It is advisable to get this ticket 3 or 4 months in advance.</p> -->
+                </p>
                 <h6>For more information <a href="httspans://www.ticketmachupicchu.com/">Click Here!</a></h6>
+                <button id="tipsBtn"><a href="discover.html">Useful Tips!</a></button>
             </div>
         </div>
     </section>
     <section id="spotlights">
         <h2>SPOTLIGHTS</h2>
-        <div class="spotlightCard">
-            <img src="./images/spotlight1.png" alt="spotlight1">
+        <div id="cardContainer-spotlights">
+            <div class="spotlightCard">
+                <img src="./images/spotlight1.png" alt="spotlight1">
+            </div>
         </div>
+        <button><a href="directory.html">Meet our Members!</a></button>
     </section>
     <footer>
         <ul>
@@ -147,5 +145,6 @@
     </footer>
 
     <script src="./scripts/getDates.js"></script>
+    <script src="./scripts/banner.js"></script>
 </body>
 </html>
